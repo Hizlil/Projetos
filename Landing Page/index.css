@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    background-color:#000000;
+}
+main{
+    min-width:320px;
+    max-width:1000px;
+    margin: auto;
+    padding:20px;
+}
+*{
+    box-sizing: content-box;
+    margin: 0;
+}
+header>h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size:40px;
+    font-family: "Oswald", sans-serif;
+}
+header>h2{
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    font-size:16px;
+    background-color:#08083aa8;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    max-width:400px;
+}
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:50px;
+}
+nav>a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin:15px;
+    padding:5px;
+    font-family: "Oswald", sans-serif;
+    font-weight: lighter;
+    font-size:18px;
+}
+nav>a:hover{
+    background-color: #11116ea8;
+    border-radius:10px;
+    transition-duration:0.1s;
+    transform: scale(1.1);
+}
+.cor{
+    color: blue;
+    font-weight: bold;
+}
+#programador{
+    width:100%;
+    max-width:250px;
+    margin: auto;
+}
+#full{
+    margin: auto;
+}
+main>section>#full>span{
+    display: inline-flex;
+    font-family: "Oswald", sans-serif;
+    font-weight: lighter;
+    font-size:25px;
+    justify-content: center;
+    align-items: center;
+    width:230px;
+    height:25px;
+    padding:4px; 
+    position: relative;
+}
+main>section>#full{
+    max-width:300px;
+    box-shadow:0px 0px 5px rgba(255, 255, 255, 0.575);
+    border-radius:10px;
+}
+#lupa{
+    margin-left:5px;
+}
+#full span::before{
+    content:"";
+    color:#1294e2;
+    text-shadow: 0px 0px 5px black;
+    animation: palavras 25s infinite;
+}
+#full span::after{
+    content: "";
+    position: absolute;
+    height:100%;
+    border-left:1px solid transparent;
+    right:-10px;
+    animation: cursor .9s infinite,digita 25s steps(20) infinite;
+    width:calc(100% + 12px);
+    background-color: #000000;
+}
+
+@keyframes digita {
+    10%,15%,30%,35%,50%,70%,75%,90%,95%{
+        width:0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width:calc(100% + 12px);
+    }
+}
+@keyframes cursor {
+    0%{
+        border-left:1px solid transparent;
+    }
+}
+@keyframes palavras {
+    0%,20%{
+        content:"Full Stack Developer";
+    }
+    21%,40%{
+        content:"Site Responsivo";
+    }
+    41%,60%{
+        content:"User Experience";
+    }
+    61%,80%{
+        content:"Páginas Rápidas";
+    }
+    81%,100%{
+        content:"Suporte Contínuo";
+    }  
+}
+main>section>div>h3>a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+main>.descriçao>.titulo{
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-weight: lighter;
+    font-size:37px;
+    text-align: center;
+}
+main>.descriçao>p{
+    margin-top:10px;
+    color: rgb(255, 255, 255);
+    max-width:1000px;
+    min-width:320px;
+    padding:10px;
+    border-radius:3px;
+    text-indent:10px;
+}
+ul{
+    color: rgb(255, 255, 255);
+    font-family: "Oswald", sans-serif;
+    font-weight: lighter;
+    font-size:18px;
+}   
+a{
+    text-decoration: none;
+}
+#container{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+main>#container:hover .caixas{
+    filter: blur(2px);
+    transition:0.5s;
+}
+main>#container>.caixas{
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    margin:10px;
+    color: white;
+    border-radius:10px;
+    background:linear-gradient(to top,transparent,#08083aa8);
+    max-width:250px;
+    height:250px;
+    border:2px solid rgba(255, 255, 255, 0.301);
+}
+main>#container>.caixas:hover{
+    filter: blur(0px) !important;
+    transform:scale(1.1);
+}
+main>#container>.caixas>h3{
+    font-weight:bold;
+}
+main>#container>.caixas>p{
+    font-size:14px;
+    padding:9px;
+}
