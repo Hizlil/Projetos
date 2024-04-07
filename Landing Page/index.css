@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color:#000000;
+    background-color:#051934;
 }
 main{
     min-width:320px;
@@ -14,21 +14,23 @@ main{
 }
 header>h1{
     text-align: center;
-    color: white;
+    color: #11457D;
     font-weight: bold;
     font-size:40px;
     font-family: "Oswald", sans-serif;
+    text-shadow: 0px 0x 5px black;
+    letter-spacing:5px;
 }
 header>h2{
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: "Oswald", sans-serif;
     font-weight: normal;
     font-size:16px;
-    background-color:#08083aa8;
+    background-color:#ffffff;
     margin: auto;
     text-align: center;
     border-radius: 10px;
-    max-width:400px;
+    max-width:180px;
 }
 nav{
   display: flex;
@@ -38,23 +40,27 @@ nav{
 }
 nav>a{
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    color: rgb(255, 255, 255);
     margin:15px;
     padding:5px;
     font-family: "Oswald", sans-serif;
     font-weight: lighter;
     font-size:18px;
 }
+.cor{
+    color:#11457D;
+}
+#cor{
+    color:white;
+}
+.title_box{
+    color: #096110;
+}
 nav>a:hover{
-    background-color: #11116ea8;
+    background-color: #06069296;
     border-radius:10px;
     transition-duration:0.1s;
     transform: scale(1.1);
-}
-.cor{
-    color: blue;
-    font-weight: bold;
 }
 #programador{
     width:100%;
@@ -63,12 +69,13 @@ nav>a:hover{
 }
 #full{
     margin: auto;
+    border:1px solid black;
 }
 main>section>#full>span{
     display: inline-flex;
     font-family: "Oswald", sans-serif;
-    font-weight: lighter;
-    font-size:25px;
+    font-weight: normal;
+    font-size:22px;
     justify-content: center;
     align-items: center;
     width:230px;
@@ -78,16 +85,16 @@ main>section>#full>span{
 }
 main>section>#full{
     max-width:300px;
-    box-shadow:0px 0px 5px rgba(255, 255, 255, 0.575);
+    box-shadow:0px 0px 5px rgb(0, 0, 0);
     border-radius:10px;
 }
 #lupa{
-    margin-left:5px;
+   margin-left:5px;
+   margin-top:5px;
 }
 #full span::before{
     content:"";
-    color:#1294e2;
-    text-shadow: 0px 0px 5px black;
+    color:#ffffff;
     animation: palavras 25s infinite;
 }
 #full span::after{
@@ -98,7 +105,7 @@ main>section>#full{
     right:-10px;
     animation: cursor .9s infinite,digita 25s steps(20) infinite;
     width:calc(100% + 12px);
-    background-color: #000000;
+    background-color: #051934;
 }
 
 @keyframes digita {
@@ -131,35 +138,6 @@ main>section>#full{
         content:"Suporte Contínuo";
     }  
 }
-main>section>div>h3>a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-main>.descriçao>.titulo{
-    color: white;
-    font-family: "Oswald", sans-serif;
-    font-weight: lighter;
-    font-size:37px;
-    text-align: center;
-}
-main>.descriçao>p{
-    margin-top:10px;
-    color: rgb(255, 255, 255);
-    max-width:1000px;
-    min-width:320px;
-    padding:10px;
-    border-radius:3px;
-    text-indent:10px;
-}
-ul{
-    color: rgb(255, 255, 255);
-    font-family: "Oswald", sans-serif;
-    font-weight: lighter;
-    font-size:18px;
-}   
-a{
-    text-decoration: none;
-}
 #container{
     display: flex;
     flex-wrap:wrap;
@@ -175,12 +153,14 @@ main>#container>.caixas{
     font-family: "Oswald", sans-serif;
     font-weight: normal;
     margin:10px;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius:10px;
-    background:linear-gradient(to top,transparent,#08083aa8);
+    border:2px solid #6AB2FF;
+    background:linear-gradient(to bottom,transparent,#0C3057);
     max-width:250px;
     height:250px;
-    border:2px solid rgba(255, 255, 255, 0.301);
+    
+    box-shadow:0px 0px 5px rgba(0, 0, 0, 0.596);
 }
 main>#container>.caixas:hover{
     filter: blur(0px) !important;
