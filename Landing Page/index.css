@@ -68,29 +68,31 @@ nav>a:hover{
     margin: auto;
 }
 #full{
+    display: flex;
+    align-items: center;
     margin: auto;
     border:1px solid black;
 }
 main>section>#full>span{
-    display: inline-flex;
+    display: flex;
     font-family: "Oswald", sans-serif;
-    font-weight: normal;
-    font-size:22px;
+    font-weight: lighter;
+    font-size:23px;
     justify-content: center;
     align-items: center;
     width:230px;
-    height:25px;
-    padding:4px; 
+    height:30px;
+    margin-left:3px;
     position: relative;
 }
 main>section>#full{
-    max-width:300px;
+    max-width:280px;
     box-shadow:0px 0px 5px rgb(0, 0, 0);
     border-radius:10px;
 }
 #lupa{
    margin-left:5px;
-   margin-top:5px;
+   margin-top:4px;
 }
 #full span::before{
     content:"";
